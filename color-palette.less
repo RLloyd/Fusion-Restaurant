@@ -1,0 +1,49 @@
+/*--= Color base variables =--*/
+@primary:      #064e60; // Your primary color
+@primary-50:   #f0fcff;
+@primary-100:  #bad2d9;
+@primary-200:  #85aab6;
+@primary-300:  #508393;
+@primary-400:  #0d5e73;
+@primary-500:  #064e60; //same as primary
+@primary-600:  #07404e;
+@primary-700:  #06323e;
+@primary-800:  #05242d;
+@primary-900:  #01181e;
+@primary-1000: #00090A;
+
+@secondary: #0aaadb; // Secondary color
+@success:   #35aa07; // Success state color
+@accent:    #f86700; // Accent state color
+@error:     #ff0000; // Error state color
+@warning:   #d47d19; // Warning state color
+@neutral:   #677e85; // Neutral state color
+@gray-light:#f8f9fa;
+@gray-dark: #343a40;
+
+/*--= Semantic color tokens =--*/
+@brand-color: @primary;
+@text-color: @gray-dark;
+@background-color: @white;
+@button-bg: @primary;
+@button-text: @white;
+
+/*--= Usage =--*/
+.header {
+   background-color: @background-color;
+   color: @text-color;
+}
+
+.button {
+   background-color: @button-bg;
+   color: @button-text;
+}
+
+// Mixin to generate different shades of a color
+.color-shade(@color, @percent) {
+   mix(@color, @white, @percent);
+}
+
+/*--= Usage =--*/
+@primary-light: color-shade(@primary, 0.8); // Lighter shade
+@primary-dark: color-shade(@primary, 0.2); // Darker shade

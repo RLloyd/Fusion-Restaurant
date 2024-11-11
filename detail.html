@@ -1,0 +1,82 @@
+<!-- detail.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Detail - Sono Restaurant</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet">
+   <!-- Add Font Awesome -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+   <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="dark-theme">
+   <!-- Theme Toggle -->
+   <theme-toggle></theme-toggle>
+
+   <!-- Mobile Menu Toggle -->
+   <div class="mobile-menu-toggle">
+      <button id="mobileMenuBtn" aria-label="Toggle mobile menu">
+         <span class="hamburger-line"></span>
+         <span class="hamburger-line"></span>
+         <span class="hamburger-line"></span>
+      </button>
+   </div>
+
+   <!-- Navigation -->
+   <site-navigation></site-navigation>
+
+   <!-- Detail Hero Section -->
+   <section class="detail-hero">
+      <div class="detail-hero-image">
+         <img src="" alt="Feature detail">
+      </div>
+      <div class="detail-hero-content">
+         <h1></h1>
+         <div class="detail-meta">
+            <span class="detail-category"></span>
+            <span class="detail-price"></span>
+         </div>
+      </div>
+   </section>
+
+   <!-- Detail Content -->
+   <section class="detail-content">
+      <div class="detail-description">
+         <h2>About</h2>
+         <!-- Description will be inserted here -->
+      </div>
+
+      <div class="detail-items">
+         <h2>Featured Items</h2>
+         <div class="items-grid">
+            <!-- Items will be inserted here -->
+         </div>
+      </div>
+   </section>
+
+   <!-- Footer -->
+   <site-footer></site-footer>
+
+   <script src="data.js"></script>
+   <script src="theme-toggle.js"></script>
+   <script src="main.js"></script>
+   <script src="nav.js"></script>
+   <script src="footer.js"></script>
+   <!-- Include detail.js only in detail.html -->
+   <script src="detail.js"></script>
+
+</body>
+
+<!-- <script src="data.js"></script>
+<script src="main.js"></script> -->
+<!-- Include detail.js only in detail.html -->
+<!-- <script src="detail.js"></script> -->
+
+</html>

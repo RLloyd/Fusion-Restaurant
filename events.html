@@ -1,0 +1,68 @@
+<!-- events.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private Events - Fancy Restaurant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="detail-pages.css">
+</head>
+<body class="dark-theme">
+    <!-- Include the same navigation and theme toggle from index.html -->
+    <!-- ... -->
+
+    <main class="detail-page events-page" role="main" aria-label="Private events information">
+        <header class="detail-header">
+            <h1>Private Events</h1>
+            <p>Create unforgettable moments in our exclusive spaces</p>
+        </header>
+
+        <section class="events-grid">
+            <div class="event-space" role="article">
+                <img src="images/private-dining-room.jpg" alt="Private dining room with elegant table setting">
+                <div class="event-content">
+                    <h2>Private Dining Room</h2>
+                    <p>Intimate space for up to 20 guests</p>
+                    <a href="#enquire" class="cta-button">Enquire Now</a>
+                </div>
+            </div>
+            <!-- More event spaces... -->
+        </section>
+
+        <section id="enquire" class="enquiry-form" aria-label="Event enquiry form">
+            <h2>Make an Enquiry</h2>
+            <form id="eventForm">
+                <div class="form-group">
+                    <label for="event-name">Name</label>
+                    <input type="text" id="event-name" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label for="event-email">Email</label>
+                    <input type="email" id="event-email" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label for="event-date">Preferred Date</label>
+                    <input type="date" id="event-date" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label for="event-guests">Number of Guests</label>
+                    <input type="number" id="event-guests" min="1" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label for="event-message">Additional Information</label>
+                    <textarea id="event-message" rows="4"></textarea>
+                </div>
+                <button type="submit" class="cta-button">Submit Enquiry</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Include the same footer from index.html -->
+    <!-- ... -->
+</body>
+</html>
